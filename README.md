@@ -18,6 +18,17 @@ getMaxNumber(1, true, 'test', null, 7, undefined, '15', '') // 7
 ```
 </details>
 
+<details><summary>Tips</summary>
+The task concerns: Math.max, typeof, rest operator, spread operator, Array.filter, isNaN
+</details>
+
+<details><summary>Solution</summary>
+ 
+```javascript
+
+```
+</details>
+
 ---
 
 ### Task 2
@@ -36,6 +47,17 @@ isEven(NaN) // null
 isEven(15) // false
 isEven('15') // false
 isEven(6) // true
+```
+</details>
+
+<details><summary>Tips</summary>
+The task concerns: typeof, modulus operator
+</details>
+
+<details><summary>Solution</summary>
+ 
+```javascript
+
 ```
 </details>
 
@@ -59,6 +81,17 @@ getEvenNumbers([2, 3, 5, 6, 9, 8, '10']) // 'Even numbers: 2, 6, 8'
 ```
 </details>
 
+<details><summary>Tips</summary>
+The task concerns: Array.filter, Array.join
+</details>
+
+<details><summary>Solution</summary>
+ 
+```javascript
+
+```
+</details>
+
 ---
 
 ### Task 4
@@ -78,6 +111,19 @@ getPersonsFullNames([{firstName: 'John   ', lastName: 'Smith'}, {firstName: 'Fra
 ```
 </details>
 
+<details><summary>Tips</summary>
+The task concerns: template literals, Array.map, String.trim
+</details>
+
+<details><summary>Solution</summary>
+ 
+```javascript
+
+```
+</details>
+
+---
+
 ### Task 
 Create a function () 
 
@@ -85,6 +131,17 @@ Create a function ()
 
 <details><summary>Example results</summary>
   
+```javascript
+
+```
+</details>
+
+<details><summary>Tips</summary>
+The task concerns: 
+</details>
+
+<details><summary>Solution</summary>
+ 
 ```javascript
 
 ```
