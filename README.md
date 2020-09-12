@@ -156,6 +156,35 @@ The task concerns: template literals, Array.forEach
 
 ---
 
+### Task 6
+Create a function (`sumCart`) which returns value of products in the cart. The function has one argument which is object array.
+
+* The argument is required
+* The array can be empty and then the function returns `0`
+* Every object inside the array has `id`, `count`, `price` keys, Every key has value as `Number` type. You do not have to check it
+* A product value is equal to count times price
+
+<details><summary>Example results</summary>
+  
+```javascript
+sumCart([]) // 0
+sumCart([{id: 1, count: 1, price: 3}, {id: 2, count: 2, price: 2}]) // 7
+```
+</details>
+
+<details><summary>Tips</summary>
+The task concerns: Array.reduce
+</details>
+
+<details><summary>Solution</summary>
+ 
+```javascript
+
+```
+</details>
+
+---
+
 ### Task 
 Create a function () 
 
