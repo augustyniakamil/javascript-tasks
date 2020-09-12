@@ -124,6 +124,38 @@ The task concerns: template literals, Array.map, String.trim
 
 ---
 
+### Task 5
+Create a function (`logPeople`) which shows every person in the different line in terminal, according to the pattern `<the first letter of firstName>. <lastName> - <age>`
+
+* People array to use inside the function:
+```javascript
+const people = [
+  {firstName: 'John', lastName: 'Smith', age: 40},
+  {firstName: 'Frank', lastName: 'Camp', age: 30}
+]
+```
+
+<details><summary>Result</summary>
+  
+```javascript
+console.log('J. Smith - 40')
+console.log('F. Camp - 30')
+```
+</details>
+
+<details><summary>Tips</summary>
+The task concerns: template literals, Array.forEach
+</details>
+
+<details><summary>Solution</summary>
+ 
+```javascript
+
+```
+</details>
+
+---
+
 ### Task 
 Create a function () 
 
