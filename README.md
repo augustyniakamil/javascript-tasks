@@ -18,6 +18,8 @@ getMaxNumber(1, true, 'test', null, 7, undefined, '15', '') // 7
 ```
 </details>
 
+---
+
 ### Task 2
 Create a function (`isEven`) that has one argument and checks that number is even. The argument should be a `Number` type but you have to check it.
 
@@ -37,6 +39,8 @@ isEven(6) // true
 ```
 </details>
 
+---
+
 ### Task 3
 Using the function from Task 2 (`isEven`), create another function (`getEvenNumbers`) that has one argument and returns even numbers. The argument should be a `Number` type array but you have to check it.
 
@@ -52,6 +56,25 @@ getEvenNumbers([]) // 'No even numbers.'
 getEvenNumbers(['', 'asd']) // 'No even numbers.'
 getEvenNumbers(['', '15', 15]) // 'No even numbers.'
 getEvenNumbers([2, 3, 5, 6, 9, 8, '10']) // 'Even numbers: 2, 6, 8'
+```
+</details>
+
+---
+
+### Task 4
+Create a function (`getPersonsFullNames`) that has one argument which is an object array. Every object contains `firstName` and `lastName` keys. The keys always have value as `String` type. The function returns a formatted `String` array.
+
+* `firstName` and `lastName` key values are combined together, separated by whitespace
+* If `firstName` or `lastName` have extra whitespace on the left or right text side, you have to remove it
+* You do not have to check that object keys exist and have value.
+* The function argument is required, you do not have to check it
+
+<details><summary>Example results</summary>
+  
+```javascript
+getPersonsFullNames([]) // []
+getPersonsFullNames([{firstName: 'John', lastName: 'Smith'}, {firstName: 'Frank', lastName: 'Camp'}] ) // ['John Smith', 'Frank Camp']
+getPersonsFullNames([{firstName: 'John   ', lastName: 'Smith'}, {firstName: 'Frank', lastName: '  Camp'}] ) // ['John Smith', 'Frank Camp']
 ```
 </details>
 
