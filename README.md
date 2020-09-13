@@ -185,6 +185,39 @@ The task concerns: Array.reduce
 
 ---
 
+### Task 7
+Create a function (`formatCreditCardNumber`), which adds extra whitespaces, according to the pattern `<4 digits> <4 digits> <4 digits> <4 digits>`. The function has an argument which is `String` type.
+
+* The argument can have whitespaces inside the text or on the left or right side, you have to remove them
+* When the text after removing whitespaces has not length 16, you should return `null`
+* You do not have to check that every char in the text is a digit
+* The function returns `null` when it is called without the argument
+
+<details><summary>Example results</summary>
+  
+```javascript
+formatCreditCardNumber() // null
+formatCreditCardNumber('') // null
+formatCreditCardNumber('12') // null
+formatCreditCardNumber(' 1 2 ') // null
+formatCreditCardNumber('1111222233334444') // '1111 2222 3333 4444'
+formatCreditCardNumber(' 11 11222 2333 34444 ') // '1111 2222 3333 4444'
+```
+</details>
+
+<details><summary>Tips</summary>
+The task concerns: String.replace
+</details>
+
+<details><summary>Solution</summary>
+ 
+```javascript
+
+```
+</details>
+
+---
+
 ### Task 
 Create a function () 
 
