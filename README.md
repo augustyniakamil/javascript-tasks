@@ -2,6 +2,11 @@
 This repository contains JavaScript tasks which help during learning and revision.
 
 ## How to use it
+1. Clone the repository.
+2. In the project directory, run the `npm install` command.
+3. Write your solutions inside the `tasks` directory, filenames describe the specific task.
+4. If you want to check your code, you can run the `npm test` command.
+5. Check tips and solutions in the readme file only when it is necessary. You should do it without them.
 
 ## Tasks
 
