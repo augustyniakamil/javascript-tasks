@@ -97,7 +97,7 @@ The task concerns: Array.filter, Array.join
 ### Task 4
 Create a function (`getPersonsFullNames`) that has one argument which is an object array. Every object contains `firstName` and `lastName` keys. The keys always have value as `String` type. The function returns a formatted `String` array.
 
-* `firstName` and `lastName` key values are combined together, separated by whitespace
+* In the result, firstName and lastName key values are combined together, separated by whitespace
 * If `firstName` or `lastName` have extra whitespace on the left or right text side, you have to remove it
 * You do not have to check that object keys exist and have value.
 * The function argument is required, you do not have to check it
@@ -239,6 +239,43 @@ isPalindrome('My gym') // true
 
 <details><summary>Tips</summary>
 The task concerns: String.split, Array.reverse, Array.join, String.toLowerCase
+</details>
+
+<details><summary>Solution</summary>
+ 
+```javascript
+
+```
+</details>
+
+---
+
+### Task 9
+Create a function (`getProductPrice`) which has one argument as `Number` type. The argument is a product `id`. 
+
+* The argument is required, you do not have to check it
+* The function looks for in the object array correct product and return price
+* If the product does not exist, returns null
+* Every object inside the array has `id` and `price` keys. Every key has value as `Number` type. You do not have to check it
+* Products array to use inside the function:
+```javascript
+const products = [
+  {id: 1, price: 5},
+  {id: 2, price: 10}
+]
+```
+<details><summary>Example results</summary>
+  
+```javascript
+getProductPrice(0) // null
+getProductPrice(1) // 5
+getProductPrice(2) // 10
+getProductPrice(3) // null
+```
+</details>
+
+<details><summary>Tips</summary>
+The task concerns: Array.find
 </details>
 
 <details><summary>Solution</summary>
