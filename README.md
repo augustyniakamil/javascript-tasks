@@ -448,7 +448,7 @@ hasPermissions(['P2', 'P4'], ['P2', 'P3']) // false
 </details>
 
 <details><summary>Tips</summary>
-The task concerns: 
+The task concerns: Array.some, Array.every 
 </details>
 
 <details><summary>Solution</summary>
