@@ -287,6 +287,47 @@ The task concerns: Array.find
 
 ---
 
+### Task 10
+Create a function (`getPeople`) which has one argument as `String` type. The argument is a searching phrase. 
+
+* You should get the people array that matches the passed searching phrase
+* The argument should have minimum 3 chars
+* If the argument has less than 3 chars, returns an empty array.
+* If every person does not match to the passed searching phrase, returns an empty array.
+* The size of the characters does not matter
+* People array to use inside the function:
+```javascript
+const people = [
+  {firstName: 'John', lastName: 'Smith', age: 40},
+  {firstName: 'Frank', lastName: 'Camp', age: 30},
+  {firstName: 'John', lastName: 'Camp', age: 20}
+]
+```
+
+<details><summary>Example results</summary>
+  
+```javascript
+getPeople() // []
+getPeople('aa') // []
+getPeople('aaa') // []
+getPeople('joh') // [{firstName: 'John', lastName: 'Smith', age: 40}, {firstName: 'John', lastName: 'Camp', age: 20}]
+getPeople('joHn s') // [  {firstName: 'John', lastName: 'Smith', age: 40}]
+```
+</details>
+
+<details><summary>Tips</summary>
+The task concerns: String.toLowerCase, String.includes, Array.filter
+</details>
+
+<details><summary>Solution</summary>
+ 
+```javascript
+
+```
+</details>
+
+---
+
 ### Task 
 Create a function () 
 
