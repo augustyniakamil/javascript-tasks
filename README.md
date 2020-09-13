@@ -2,8 +2,10 @@
 This repository contains JavaScript tasks which help during learning and revision.
 
 ### Task 1
-Create a function (`getMaxNumber`) which has infinite arguments and returns the max number. The argument should be a `Number` type but you have to check it. 
+Create a function (`getMaxNumber`) which returns the max number. 
 
+* The function has infinite arguments
+* The arguments should be a `Number` type but you have to check it
 * The function returns `null` when it is called without arguments
 * Arguments that not valid `Number` type are omitted (pay attention to `NaN`)
 * When every argument is not valid, returns `null`
@@ -32,9 +34,11 @@ The task concerns: Math.max, typeof, rest operator, spread operator, Array.filte
 ---
 
 ### Task 2
-Create a function (`isEven`) that has one argument and checks that number is even. The arguments should be a `Number` type but you have to check it.
+Create a function (`isEven`) which checks that number is even.
 
-* The function returns `null` when it is called without the argument.
+* The function has one argument
+* The argument should be a `Number` type but you have to check it
+* The function returns `null` when it is called without the argument
 * When argument is not valid `Number` type, returns `null`
 
 <details><summary>Example results</summary>
@@ -64,11 +68,13 @@ The task concerns: typeof, modulus operator
 ---
 
 ### Task 3
-Using the function from Task 2 (`isEven`), create another function (`getEvenNumbers`) that has one argument and returns even numbers. The argument should be a `Number` type array but you have to check it.
+Using the function from Task 2 (`isEven`), create another function (`getEvenNumbers`) which returns even numbers.
 
-* The function returns `No even numbers.` when it is called without the argument.
+* The function has one argument
+* The argument should be a `Number` type array but you have to check it
+* The function returns `No even numbers.` when it is called without the argument
 * If the argument is an empty array or does not have any valid number, returns `No even numbers.`
-* If the argument contains even numbers, it is returned as text, according to the pattern `Even numbers: <evenNumbers>`, even numbers are split by a comma with extra space
+* If the argument contains even numbers, it is returned as text, according to the pattern `Even numbers: <evenNumbers>`, even numbers are split by a comma with extra whitespace
 
 <details><summary>Example results</summary>
   
@@ -372,6 +378,41 @@ mergeAndSortNumberArrays([1, 3], [2, 1]) // [1, 1, 2, 3]
 
 <details><summary>Tips</summary>
 The task concerns: Array.sort, Array.reduce, rest operator, spread operator
+</details>
+
+<details><summary>Solution</summary>
+ 
+```javascript
+
+```
+</details>
+
+---
+
+### Task 13
+Create a function (`hasPermission`) which checks that the user has correct permission 
+
+* The function has 2 arguments
+* The first argument is  `String` array which describes permissions that the user has. This argument is required and can not be null or undefined but can be an empty array
+* The second argument is a `String` type which describes permission which is required. This argument is optional.
+* Available permission code names:
+```javascript
+const appPermissions = ['P1', 'P2', 'P3', 'P4', 'P5']
+```
+
+
+<details><summary>Example results</summary>
+  
+```javascript
+hasPermission([]) // true
+hasPermission([], 'P1') // false
+hasPermission([P2, P3], 'P1') // false
+hasPermission([P2, P3], 'P3') // true
+```
+</details>
+
+<details><summary>Tips</summary>
+The task concerns: Array.some
 </details>
 
 <details><summary>Solution</summary>
