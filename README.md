@@ -75,6 +75,7 @@ isEven(6) // true
 </details>
 
 <details><summary>Tips</summary>
+ 
 The task concerns: [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof), [isNaN()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN)
 </details>
 
@@ -114,6 +115,7 @@ getEvenNumbers([2, 3, 5, 6, 9, 8, '10']) // 'Even numbers: 2, 6, 8'
 </details>
 
 <details><summary>Tips</summary>
+
 The task concerns: [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter), [Array.prototype.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 </details>
 
@@ -162,6 +164,7 @@ getPeopleFullNames([{firstName: 'John   ', lastName: 'Smith'}, {firstName: 'Fran
 </details>
 
 <details><summary>Tips</summary>
+
 The task concerns: template literals, [Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [String.prototype.trim()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
 </details>
 
@@ -196,6 +199,7 @@ console.log('F. Camp - 30')
 </details>
 
 <details><summary>Tips</summary>
+
 The task concerns: [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals), [Array.prototype.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 </details>
 
@@ -233,6 +237,7 @@ sumCart([{id: 1, count: 1, price: 3}, {id: 2, count: 2, price: 2}]) // 7
 </details>
 
 <details><summary>Tips</summary>
+
 The task concerns: [Array.prototype.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 </details>
 
@@ -269,6 +274,7 @@ formatCreditCardNumber(' 11 11222 2333 34444 ') // '1111 2222 3333 4444'
 </details>
 
 <details><summary>Tips</summary>
+
 The task concerns: [String.prototype.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace), [String.prototype.trim()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
 </details>
 
@@ -317,6 +323,7 @@ isPalindrome('My gym') // true
 </details>
 
 <details><summary>Tips</summary>
+
 The task concerns: [String.prototype.split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split), [Array.prototype.reverse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse), [Array.prototype.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join), [String.prototype.toLowerCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
 </details>
 
@@ -365,6 +372,7 @@ getProductPrice(3) // null
 </details>
 
 <details><summary>Tips</summary>
+
 The task concerns: [Array.prototype.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 </details>
 
@@ -417,6 +425,7 @@ getPeople('joHn s') // [  {firstName: 'John', lastName: 'Smith', age: 40}]
 </details>
 
 <details><summary>Tips</summary>
+
 The task concerns: [String.prototype.toLowerCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase), [String.prototype.includes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes), [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 </details>
 
@@ -456,6 +465,7 @@ getRandomNumber() // 10
 </details>
 
 <details><summary>Tips</summary>
+
 The task concerns: [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random), [Math.floor()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor)
 </details>
 
@@ -490,6 +500,7 @@ mergeAndSortNumberArrays([1, 3], [2, 1]) // [1, 1, 2, 3]
 </details>
 
 <details><summary>Tips</summary>
+
 The task concerns: [Rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters), [spread syntax (...)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax), [Array.prototype.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce), [Array.prototype.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 </details>
 
@@ -527,6 +538,7 @@ hasPermission(['P2', 'P3'], 'P3') // true
 </details>
 
 <details><summary>Tips</summary>
+
 The task concerns: [Array.prototype.some()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
 </details>
 
@@ -573,6 +585,7 @@ hasPermissions(['P2', 'P4'], ['P2', 'P3']) // false
 </details>
 
 <details><summary>Tips</summary>
+
 The task concerns: [Array.prototype.some()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some), [Array.prototype.every()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
 </details>
 
