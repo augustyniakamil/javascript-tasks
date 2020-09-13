@@ -218,6 +218,38 @@ The task concerns: String.replace
 
 ---
 
+### Task 8
+Create a function (`isPalindrome`), which has an argument as `String` type. The function checks that the passed argument is a palindrome. 
+
+* The function returns `false` when it is called without the argument
+* You do not have to check that the argument is correct `String` type
+* The size of the characters does not matter
+
+> A palindrome is a phrase which reads the same backward as forward.
+
+<details><summary>Example results</summary>
+  
+```javascript
+isPalindrome() // false
+isPalindrome('dog') // false
+isPalindrome('level') // true
+isPalindrome('My gym') // true
+```
+</details>
+
+<details><summary>Tips</summary>
+The task concerns: String.split, Array.reverse, Array.join, String.toLowerCase
+</details>
+
+<details><summary>Solution</summary>
+ 
+```javascript
+
+```
+</details>
+
+---
+
 ### Task 
 Create a function () 
 
