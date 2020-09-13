@@ -5,7 +5,7 @@ This repository contains JavaScript tasks which help during learning and revisio
 1. Clone the repository.
 2. In the project directory, run the `npm install` command.
 3. Write your solutions inside the `tasks` directory, filenames describe the specific task.
-4. If you want to check your code, you can run the `npm test` command.
+4. If you want to check your code, you can run the `npm test` command. This command checks every task. If you want to check only one task, you can use the `npm test task-1.test.js` command (you have to only change the number task).
 5. Check tips and solutions in the readme file only when it is necessary. You should do it without them.
 
 ## Tasks
@@ -31,7 +31,7 @@ getMaxNumber(1, true, 'test', null, 7, undefined, '15', '') // 7
 
 <details><summary>Tips</summary>
 
-The task concerns: Math.max, typeof, rest operator, spread operator, Array.filter, isNaN
+The task concerns: [Math.max()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max), [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof), [Rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters), [spread syntax (...)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax), [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter), [isNaN()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN)
 </details>
 
 <details><summary>Solution</summary>
@@ -75,7 +75,7 @@ isEven(6) // true
 </details>
 
 <details><summary>Tips</summary>
-The task concerns: typeof, modulus operator
+The task concerns: [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof), [isNaN()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN)
 </details>
 
 <details><summary>Solution</summary>
@@ -114,7 +114,7 @@ getEvenNumbers([2, 3, 5, 6, 9, 8, '10']) // 'Even numbers: 2, 6, 8'
 </details>
 
 <details><summary>Tips</summary>
-The task concerns: Array.filter, Array.join
+The task concerns: [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter), [Array.prototype.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
 </details>
 
 <details><summary>Solution</summary>
@@ -162,7 +162,7 @@ getPeopleFullNames([{firstName: 'John   ', lastName: 'Smith'}, {firstName: 'Fran
 </details>
 
 <details><summary>Tips</summary>
-The task concerns: template literals, Array.map, String.trim
+The task concerns: template literals, [Array.prototype.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map), [String.prototype.trim()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
 </details>
 
 <details><summary>Solution</summary>
@@ -196,7 +196,7 @@ console.log('F. Camp - 30')
 </details>
 
 <details><summary>Tips</summary>
-The task concerns: template literals, Array.forEach
+The task concerns: [Template literals](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals), [Array.prototype.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 </details>
 
 <details><summary>Solution</summary>
@@ -233,7 +233,7 @@ sumCart([{id: 1, count: 1, price: 3}, {id: 2, count: 2, price: 2}]) // 7
 </details>
 
 <details><summary>Tips</summary>
-The task concerns: Array.reduce
+The task concerns: [Array.prototype.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce)
 </details>
 
 <details><summary>Solution</summary>
@@ -269,7 +269,7 @@ formatCreditCardNumber(' 11 11222 2333 34444 ') // '1111 2222 3333 4444'
 </details>
 
 <details><summary>Tips</summary>
-The task concerns: String.replace
+The task concerns: [String.prototype.replace()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace), [String.prototype.trim()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim)
 </details>
 
 <details><summary>Solution</summary>
@@ -301,6 +301,7 @@ Create a function (`isPalindrome`), which checks that the passed argument is a p
 * The function returns `false` when it is called without the argument
 * You do not have to check that the argument is correct `String` type
 * The size of the characters does not matter
+* Whitespaces does not matter
 
 > A palindrome is a phrase which reads the same backward as forward.
 
@@ -316,7 +317,7 @@ isPalindrome('My gym') // true
 </details>
 
 <details><summary>Tips</summary>
-The task concerns: String.split, Array.reverse, Array.join, String.toLowerCase
+The task concerns: [String.prototype.split()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/split), [Array.prototype.reverse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse), [Array.prototype.join()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join), [String.prototype.toLowerCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase)
 </details>
 
 <details><summary>Solution</summary>
@@ -364,7 +365,7 @@ getProductPrice(3) // null
 </details>
 
 <details><summary>Tips</summary>
-The task concerns: Array.find
+The task concerns: [Array.prototype.find()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find)
 </details>
 
 <details><summary>Solution</summary>
@@ -416,7 +417,7 @@ getPeople('joHn s') // [  {firstName: 'John', lastName: 'Smith', age: 40}]
 </details>
 
 <details><summary>Tips</summary>
-The task concerns: String.toLowerCase, String.includes, Array.filter
+The task concerns: [String.prototype.toLowerCase()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase), [String.prototype.includes()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes), [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
 </details>
 
 <details><summary>Solution</summary>
@@ -455,7 +456,7 @@ getRandomNumber() // 10
 </details>
 
 <details><summary>Tips</summary>
-The task concerns: Math.random, Math.floor
+The task concerns: [Math.random()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random), [Math.floor()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/floor)
 </details>
 
 <details><summary>Solution</summary>
@@ -489,7 +490,7 @@ mergeAndSortNumberArrays([1, 3], [2, 1]) // [1, 1, 2, 3]
 </details>
 
 <details><summary>Tips</summary>
-The task concerns: Array.sort, Array.reduce, rest operator, spread operator
+The task concerns: [Rest parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters), [spread syntax (...)](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax), [Array.prototype.reduce()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce), [Array.prototype.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 </details>
 
 <details><summary>Solution</summary>
@@ -526,7 +527,7 @@ hasPermission(['P2', 'P3'], 'P3') // true
 </details>
 
 <details><summary>Tips</summary>
-The task concerns: Array.some
+The task concerns: [Array.prototype.some()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)
 </details>
 
 <details><summary>Solution</summary>
@@ -572,7 +573,7 @@ hasPermissions(['P2', 'P4'], ['P2', 'P3']) // false
 </details>
 
 <details><summary>Tips</summary>
-The task concerns: Array.some, Array.every 
+The task concerns: [Array.prototype.some()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some), [Array.prototype.every()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)
 </details>
 
 <details><summary>Solution</summary>
