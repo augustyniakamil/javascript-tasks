@@ -1,6 +1,10 @@
 # javascript-tasks
 This repository contains JavaScript tasks which help during learning and revision.
 
+## How to use it
+
+## Tasks
+
 ### Task 1
 Create a function (`getMaxNumber`) which returns the max number. 
 
@@ -101,12 +105,13 @@ The task concerns: Array.filter, Array.join
 ---
 
 ### Task 4
-Create a function (`getPersonsFullNames`) that has one argument which is an object array. Every object contains `firstName` and `lastName` keys. The keys always have value as `String` type. The function returns a formatted `String` array.
+Create a function (`getPersonsFullNames`) which returns a formatted `String` array.
 
+* The function has one argument which is an object array
+* The function argument is required, you do not have to check it but it can be an empty array
+* Every object contains `firstName` and `lastName` keys. You do not have to check that object keys exist and have value as `String` type.
 * In the result, firstName and lastName key values are combined together, separated by whitespace
 * If `firstName` or `lastName` have extra whitespace on the left or right text side, you have to remove it
-* You do not have to check that object keys exist and have value.
-* The function argument is required, you do not have to check it
 
 <details><summary>Example results</summary>
   
@@ -163,9 +168,10 @@ The task concerns: template literals, Array.forEach
 ---
 
 ### Task 6
-Create a function (`sumCart`) which returns value of products in the cart. The function has one argument which is object array.
+Create a function (`sumCart`) which returns value of products in the cart. 
 
-* The argument is required
+* The function has one argument which is object array
+* The argument is required. You do not have to check it
 * The array can be empty and then the function returns `0`
 * Every object inside the array has `id`, `count`, `price` keys, Every key has value as `Number` type. You do not have to check it
 * A product value is equal to count times price
@@ -192,8 +198,9 @@ The task concerns: Array.reduce
 ---
 
 ### Task 7
-Create a function (`formatCreditCardNumber`), which adds extra whitespaces, according to the pattern `<4 digits> <4 digits> <4 digits> <4 digits>`. The function has an argument which is `String` type.
+Create a function (`formatCreditCardNumber`), which formats credit card number by adding extra whitespaces, according to the pattern `<4 digits> <4 digits> <4 digits> <4 digits>`.
 
+* The function has one argument which is `String` type
 * The argument can have whitespaces inside the text or on the left or right side, you have to remove them
 * When the text after removing whitespaces has not length 16, you should return `null`
 * You do not have to check that every char in the text is a digit
@@ -225,8 +232,9 @@ The task concerns: String.replace
 ---
 
 ### Task 8
-Create a function (`isPalindrome`), which has an argument as `String` type. The function checks that the passed argument is a palindrome. 
+Create a function (`isPalindrome`), which checks that the passed argument is a palindrome. 
 
+* The funcion has one argument as `String` type
 * The function returns `false` when it is called without the argument
 * You do not have to check that the argument is correct `String` type
 * The size of the characters does not matter
@@ -237,6 +245,7 @@ Create a function (`isPalindrome`), which has an argument as `String` type. The 
   
 ```javascript
 isPalindrome() // false
+isPalindrome('') // false
 isPalindrome('dog') // false
 isPalindrome('level') // true
 isPalindrome('My gym') // true
@@ -257,10 +266,12 @@ The task concerns: String.split, Array.reverse, Array.join, String.toLowerCase
 ---
 
 ### Task 9
-Create a function (`getProductPrice`) which has one argument as `Number` type. The argument is a product `id`. 
+Create a function (`getProductPrice`) which returns product price.
 
+* The function has one argument as `Number` type
+* The argument is a product `id`
 * The argument is required, you do not have to check it
-* The function looks for in the object array correct product and return price
+* The function looks for in the object array correct product and returns price
 * If the product does not exist, returns null
 * Every object inside the array has `id` and `price` keys. Every key has value as `Number` type. You do not have to check it
 * Products array to use inside the function:
@@ -294,8 +305,9 @@ The task concerns: Array.find
 ---
 
 ### Task 10
-Create a function (`getPeople`) which has one argument as `String` type. The argument is a searching phrase. 
+Create a function (`getPeople`) which returns people that match to the passed searching phrase.
 
+* The function has one argument as `String` type
 * You should get the people array that matches the passed searching phrase
 * The argument should have minimum 3 chars
 * If the argument has less than 3 chars, returns an empty array.
@@ -335,7 +347,9 @@ The task concerns: String.toLowerCase, String.includes, Array.filter
 ---
 
 ### Task 11
-Create a function (`getRandomNumber`) which does not have any argument. The function returns a random integer number between range [5, 10].
+Create a function (`getRandomNumber`) which returns a random integer number between range [5, 10].
+
+* The function does not have any argument
 
 <details><summary>Example results</summary>
   
@@ -360,8 +374,10 @@ The task concerns: Math.random, Math.floor
 ---
 
 ### Task 12
-Create a function (mergeAndSortNumberArrays) which has infinite arguments and returns merged sorted number array. The arguments are a `Number` arrays, you do not have to check it. 
+Create a function (mergeAndSortNumberArrays) which returns merged sorted number array
 
+* The function has infinite arguments
+* The arguments are a `Number` arrays, you do not have to check it
 * In the result, you have to merge every arrays together in another array and returns it sorted ascending
 * The function returns an empty array when it is called without the argument
 
