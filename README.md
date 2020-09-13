@@ -406,8 +406,8 @@ const appPermissions = ['P1', 'P2', 'P3', 'P4', 'P5']
 ```javascript
 hasPermission([]) // true
 hasPermission([], 'P1') // false
-hasPermission([P2, P3], 'P1') // false
-hasPermission([P2, P3], 'P3') // true
+hasPermission(['P2', 'P3'], 'P1') // false
+hasPermission(['P2', 'P3'], 'P3') // true
 ```
 </details>
 
@@ -424,15 +424,26 @@ The task concerns: Array.some
 
 ---
 
-### Task 
-Create a function () 
+### Task 14
+Create a function (`hasPermissions`) which checks that the user has correct permissions
 
-* 
-
+* The function has 2 arguments
+* The first argument is  `String` array which describes permissions that the user has. This argument is required and can not be null or undefined but can be an empty array
+* The second argument is a `String` array which describes permissions that are required. This argument is optional.
+* Available permission code names:
+```javascript
+const appPermissions = ['P1', 'P2', 'P3', 'P4', 'P5']
+```
 <details><summary>Example results</summary>
   
 ```javascript
-
+hasPermissions([]) // true
+hasPermissions([], []) // true
+hasPermissions([], ['P1']) // false
+hasPermissions(['P2', 'P3'], ['P1']) // false
+hasPermissions(['P2', 'P3'], ['P3']) // true
+hasPermissions(['P2', 'P3'], ['P2', 'P3']) // true
+hasPermissions(['P2', 'P4'], ['P2', 'P3']) // false
 ```
 </details>
 
