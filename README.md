@@ -30,13 +30,24 @@ getMaxNumber(1, true, 'test', null, 7, undefined, '15', '') // 7
 </details>
 
 <details><summary>Tips</summary>
+
 The task concerns: Math.max, typeof, rest operator, spread operator, Array.filter, isNaN
 </details>
 
 <details><summary>Solution</summary>
  
 ```javascript
+export function getMaxNumber(...numbers) {
+  if (!numbers || !numbers.length) {
+    return null;
+  }
+  const onlyNumbers = numbers.filter(num => typeof num === 'number' && !isNaN(num));
 
+  if (!onlyNumbers.length) {
+    return null;
+  }
+  return Math.max(...onlyNumbers);
+}
 ```
 </details>
 
@@ -58,7 +69,7 @@ isEven('') // null
 isEven(false) // null
 isEven(NaN) // null
 isEven(15) // false
-isEven('15') // false
+isEven('15') // null
 isEven(6) // true
 ```
 </details>
@@ -70,7 +81,13 @@ The task concerns: typeof, modulus operator
 <details><summary>Solution</summary>
  
 ```javascript
+export function isEven(num) {
+  if (!num || typeof num !== 'number' || isNaN(num)) {
+    return null
+  }
 
+  return num % 2 === 0;
+}
 ```
 </details>
 
@@ -103,14 +120,31 @@ The task concerns: Array.filter, Array.join
 <details><summary>Solution</summary>
  
 ```javascript
+import { isEven } from './task-2';
 
+const noEvenNumbersMsg = 'No even numbers.'
+
+export function getEvenNumbers(numbers) {
+  if (!numbers || !numbers.length) {
+    return noEvenNumbersMsg;
+  }
+
+  const onlyEvenNumbers = numbers.filter(num => isEven(num));
+
+  if (!onlyEvenNumbers.length) {
+    return noEvenNumbersMsg;
+  }
+
+
+  return `Even numbers: ${onlyEvenNumbers.join(', ')}`;
+}
 ```
 </details>
 
 ---
 
 ### Task 4
-Create a function (`getPersonsFullNames`) which returns a formatted `String` array.
+Create a function (`getPeopleFullNames`) which returns a formatted `String` array.
 
 * The function has one argument which is an object array
 * The function argument is required, you do not have to check it but it can be an empty array
@@ -121,9 +155,9 @@ Create a function (`getPersonsFullNames`) which returns a formatted `String` arr
 <details><summary>Example results</summary>
   
 ```javascript
-getPersonsFullNames([]) // []
-getPersonsFullNames([{firstName: 'John', lastName: 'Smith'}, {firstName: 'Frank', lastName: 'Camp'}] ) // ['John Smith', 'Frank Camp']
-getPersonsFullNames([{firstName: 'John   ', lastName: 'Smith'}, {firstName: 'Frank', lastName: '  Camp'}] ) // ['John Smith', 'Frank Camp']
+getPeopleFullNames([]) // []
+getPeopleFullNames([{firstName: 'John', lastName: 'Smith'}, {firstName: 'Frank', lastName: 'Camp'}] ) // ['John Smith', 'Frank Camp']
+getPeopleFullNames([{firstName: 'John   ', lastName: 'Smith'}, {firstName: 'Frank', lastName: '  Camp'}] ) // ['John Smith', 'Frank Camp']
 ```
 </details>
 
@@ -134,7 +168,9 @@ The task concerns: template literals, Array.map, String.trim
 <details><summary>Solution</summary>
  
 ```javascript
-
+export function getPeopleFullNames(people) {
+  return people.map(person => `${person.firstName.trim()} ${person.lastName.trim()}`);
+}
 ```
 </details>
 
@@ -166,7 +202,14 @@ The task concerns: template literals, Array.forEach
 <details><summary>Solution</summary>
  
 ```javascript
+export function logPeople() {
+  const people = [
+    {firstName: 'John', lastName: 'Smith', age: 40},
+    {firstName: 'Frank', lastName: 'Camp', age: 30}
+  ]
 
+  people.forEach(person => console.log(`${person.firstName[0]}. ${person.lastName} - ${person.age}`))
+}
 ```
 </details>
 
@@ -196,7 +239,9 @@ The task concerns: Array.reduce
 <details><summary>Solution</summary>
  
 ```javascript
-
+export function sumCart(products) {
+  return products.reduce((prev, next) => prev + next.count * next.price, 0);
+}
 ```
 </details>
 
@@ -230,6 +275,19 @@ The task concerns: String.replace
 <details><summary>Solution</summary>
  
 ```javascript
+export function formatCreditCardNumber(cardNumber) {
+  if (!cardNumber) {
+    return null
+  }
+
+  const cardNumberWithoutWhitespaces = cardNumber.replace(/ /g, '');
+
+  if (cardNumberWithoutWhitespaces.length !== 16) {
+    return null
+  }
+
+  return cardNumberWithoutWhitespaces.replace(/(.{4})/g, '$1 ').trim();
+}
 
 ```
 </details>
@@ -264,7 +322,16 @@ The task concerns: String.split, Array.reverse, Array.join, String.toLowerCase
 <details><summary>Solution</summary>
  
 ```javascript
+export function isPalindrome(phrase) {
+  if (!phrase) {
+    return false;
+  }
 
+  const formattedPhrase = phrase.toLowerCase().replace(/ /g, '');
+  const reversedPhrase = phrase.split('').reverse().join('').toLowerCase().replace(/ /g, '');
+
+  return formattedPhrase === reversedPhrase;
+}
 ```
 </details>
 
@@ -303,6 +370,16 @@ The task concerns: Array.find
 <details><summary>Solution</summary>
  
 ```javascript
+export function getProductPrice(id) {
+  const products = [
+    {id: 1, price: 5},
+    {id: 2, price: 10}
+  ]
+
+  const product = products.find(product => product.id === id);
+
+  return product ? product.price : null
+}
 
 ```
 </details>
@@ -345,7 +422,19 @@ The task concerns: String.toLowerCase, String.includes, Array.filter
 <details><summary>Solution</summary>
  
 ```javascript
+export function getPeople(phrase) {
+  const people = [
+    {firstName: 'John', lastName: 'Smith', age: 40},
+    {firstName: 'Frank', lastName: 'Camp', age: 30},
+    {firstName: 'John', lastName: 'Camp', age: 20}
+  ]
 
+  if (!phrase || phrase.length < 3) {
+    return [];
+  }
+
+  return people.filter(person => `${person.firstName.toLowerCase()} ${person.lastName.toLowerCase()}`.includes(phrase.toLowerCase()))
+}
 ```
 </details>
 
@@ -372,14 +461,16 @@ The task concerns: Math.random, Math.floor
 <details><summary>Solution</summary>
  
 ```javascript
-
+export function getRandomNumber() {
+  return Math.round(5 + (10 - 5) * Math.random());
+}
 ```
 </details>
 
 ---
 
 ### Task 12
-Create a function (mergeAndSortNumberArrays) which returns merged sorted number array
+Create a function (`mergeAndSortNumberArrays`) which returns merged sorted number array
 
 * The function has infinite arguments
 * The arguments are a `Number` arrays, you do not have to check it
@@ -404,7 +495,9 @@ The task concerns: Array.sort, Array.reduce, rest operator, spread operator
 <details><summary>Solution</summary>
  
 ```javascript
-
+export function mergeAndSortNumberArrays(...numbers) {
+  return numbers.reduce((prev, next) => [...prev, ...next], []).sort((a,b) => a - b);
+}
 ```
 </details>
 
@@ -439,7 +532,17 @@ The task concerns: Array.some
 <details><summary>Solution</summary>
  
 ```javascript
+export function hasPermission(userPermissions, requiredPermission) {
+  if (!requiredPermission) {
+    return true;
+  }
 
+  if (!userPermissions.length) {
+    return false;
+  }
+
+  return userPermissions.some(permission => permission === requiredPermission);
+}
 ```
 </details>
 
@@ -475,6 +578,16 @@ The task concerns: Array.some, Array.every
 <details><summary>Solution</summary>
  
 ```javascript
+export function hasPermissions(userPermissions, requiredPermissions) {
+  if (!requiredPermissions || !requiredPermissions.length) {
+    return true;
+  }
 
+  if (!userPermissions.length) {
+    return false;
+  }
+
+  return requiredPermissions.every(requiredPermission => userPermissions.some(permission => permission === requiredPermission));
+}
 ```
 </details>

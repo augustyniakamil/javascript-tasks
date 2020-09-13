@@ -1,0 +1,25 @@
+{
+  "name": "javascript-tasks",
+  "version": "1.0.0",
+  "description": "This repository contains JavaScript tasks which help during learning and revision.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/augustyniakamil/javascript-tasks.git"
+  },
+  "author": "Kamil Augustyniak <contact@kamilaugustyniak.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/augustyniakamil/javascript-tasks/issues"
+  },
+  "homepage": "https://github.com/augustyniakamil/javascript-tasks#readme",
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-jest": "^26.3.0",
+    "jest": "^26.4.2"
+  }
+}
