@@ -32,7 +32,7 @@ The task concerns: Math.max, typeof, rest operator, spread operator, Array.filte
 ---
 
 ### Task 2
-Create a function (`isEven`) that has one argument and checks that number is even. The argument should be a `Number` type but you have to check it.
+Create a function (`isEven`) that has one argument and checks that number is even. The arguments should be a `Number` type but you have to check it.
 
 * The function returns `null` when it is called without the argument.
 * When argument is not valid `Number` type, returns `null`
@@ -342,6 +342,36 @@ getRandomNumber() // 10
 
 <details><summary>Tips</summary>
 The task concerns: Math.random, Math.floor
+</details>
+
+<details><summary>Solution</summary>
+ 
+```javascript
+
+```
+</details>
+
+---
+
+### Task 12
+Create a function (mergeAndSortNumberArrays) which has infinite arguments and returns merged sorted number array. The arguments are a `Number` arrays, you do not have to check it. 
+
+* In the result, you have to merge every arrays together in another array and returns it sorted ascending
+* The function returns an empty array when it is called without the argument
+
+<details><summary>Example results</summary>
+  
+```javascript
+mergeAndSortNumberArrays() // []
+mergeAndSortNumberArrays([]) // [],
+mergeAndSortNumberArrays([], []) // []
+mergeAndSortNumberArrays([], [2, 1]) // [1, 2]
+mergeAndSortNumberArrays([1, 3], [2, 1]) // [1, 1, 2, 3]
+```
+</details>
+
+<details><summary>Tips</summary>
+The task concerns: Array.sort, Array.reduce, rest operator, spread operator
 </details>
 
 <details><summary>Solution</summary>
