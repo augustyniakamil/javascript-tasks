@@ -328,6 +328,31 @@ The task concerns: String.toLowerCase, String.includes, Array.filter
 
 ---
 
+### Task 11
+Create a function (`getRandomNumber`) which does not have any argument. The function returns a random integer number between range [5, 10].
+
+<details><summary>Example results</summary>
+  
+```javascript
+getRandomNumber() // 5
+getRandomNumber() // 7
+getRandomNumber() // 10
+```
+</details>
+
+<details><summary>Tips</summary>
+The task concerns: Math.random, Math.floor
+</details>
+
+<details><summary>Solution</summary>
+ 
+```javascript
+
+```
+</details>
+
+---
+
 ### Task 
 Create a function () 
 
