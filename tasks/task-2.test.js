@@ -27,3 +27,7 @@ test("isEven('15') to equal null", () => {
 test('isEven(6) to equal true', () => {
   expect(isEven(6)).toBe(true);
 });
+
+test('isEven(0) to equal true', () => {
+  expect(isEven(0)).toBe(true);
+});

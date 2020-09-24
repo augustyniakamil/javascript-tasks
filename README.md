@@ -83,7 +83,7 @@ The task concerns: [typeof](https://developer.mozilla.org/en-US/docs/Web/JavaScr
  
 ```javascript
 export function isEven(num) {
-  if (!num || typeof num !== 'number' || isNaN(num)) {
+  if (num == null || typeof num !== 'number' || isNaN(num)) {
     return null
   }
 
