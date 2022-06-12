@@ -38,15 +38,9 @@ The task concerns: [Math.max()](https://developer.mozilla.org/en-US/docs/Web/Jav
  
 ```javascript
 export function getMaxNumber(...numbers) {
-  if (!numbers || !numbers.length) {
-    return null;
-  }
-  const onlyNumbers = numbers.filter(num => typeof num === 'number' && !isNaN(num));
+  const onlyNumbers = numbers?.filter(num => typeof num === 'number' && !isNaN(num)) ?? [];
 
-  if (!onlyNumbers.length) {
-    return null;
-  }
-  return Math.max(...onlyNumbers);
+  return onlyNumbers.length ? Math.max(...onlyNumbers) : null;
 }
 ```
 </details>
@@ -127,18 +121,9 @@ import { isEven } from './task-2';
 const noEvenNumbersMsg = 'No even numbers.'
 
 export function getEvenNumbers(numbers) {
-  if (!numbers || !numbers.length) {
-    return noEvenNumbersMsg;
-  }
+  const onlyEvenNumbers = numbers?.filter(num => isEven(num)) ?? [];
 
-  const onlyEvenNumbers = numbers.filter(num => isEven(num));
-
-  if (!onlyEvenNumbers.length) {
-    return noEvenNumbersMsg;
-  }
-
-
-  return `Even numbers: ${onlyEvenNumbers.join(', ')}`;
+  return onlyEvenNumbers.length ? `Even numbers: ${onlyEvenNumbers.join(', ')}` : noEvenNumbersMsg;
 }
 ```
 </details>
@@ -282,11 +267,7 @@ The task concerns: [String.prototype.replace()](https://developer.mozilla.org/en
  
 ```javascript
 export function formatCreditCardNumber(cardNumber) {
-  if (!cardNumber) {
-    return null
-  }
-
-  const cardNumberWithoutWhitespaces = cardNumber.replace(/ /g, '');
+  const cardNumberWithoutWhitespaces = cardNumber?.replace(/ /g, '') ?? '';
 
   if (cardNumberWithoutWhitespaces.length !== 16) {
     return null
@@ -385,11 +366,8 @@ export function getProductPrice(id) {
     {id: 2, price: 10}
   ]
 
-  const product = products.find(product => product.id === id);
-
-  return product ? product.price : null
+  return products.find(product => product.id === id)?.price ?? null;
 }
-
 ```
 </details>
 
@@ -593,7 +571,7 @@ The task concerns: [Array.prototype.some()](https://developer.mozilla.org/en-US/
  
 ```javascript
 export function hasPermissions(userPermissions, requiredPermissions) {
-  if (!requiredPermissions || !requiredPermissions.length) {
+  if (!requiredPermissions?.length) {
     return true;
   }
 
